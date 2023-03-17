@@ -1,7 +1,23 @@
 {
-  "name": "my-nuxt-layer",
+  "name": "nuxt-template",
+  "license": "MIT",
+  "author": {
+    "name": "Raphael Schmid",
+    "email": "raphaeljschmid@protonmail.com",
+    "url": "https://rjschmid.net"
+  },
+	"keywords": [
+    "tailwindcss",
+		"tailwind",
+    "nuxt",
+    "layer",
+    "nuxt-tailwind",
+    "nuxt-tailwindcss",
+    "heroicons",
+    "headlessui"
+	],
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "./nuxt.config.ts",
   "scripts": {
     "dev": "nuxi dev .playground",

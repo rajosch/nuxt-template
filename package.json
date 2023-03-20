@@ -1,5 +1,11 @@
 {
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Raphael Schmid",
+    "email": "raphaeljschmid@protonmail.com",
+    "url": "https://rjschmid.net"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

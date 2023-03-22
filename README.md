@@ -1,6 +1,6 @@
 ## Setup
 
-Make sure you have installed node.js (>= v.16):
+Make sure you have nodejs installed (>= v.16):
 
 ```bash
 node -v

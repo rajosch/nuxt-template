@@ -1,6 +1,12 @@
 ## Setup
 
-Make sure to install the dependencies:
+Make sure you have installed node.js (>= v.16):
+
+```bash
+node -v
+```
+
+Setup the project specifications you want:
 
 ```bash
 yarn setup_basic

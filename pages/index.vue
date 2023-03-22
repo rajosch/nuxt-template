@@ -1,16 +1,6 @@
 <template>
-    <div class="text-xl bg-green-200">
-        {{ test }}
+    <div class="px-2">
+        Put your website content here!
     </div>
 </template>
-  
-
-<script>
-    export default {
-        setup() {
-            const test = "This is a test."
-
-            return { test }
-        }
-    }
-</script>
+        

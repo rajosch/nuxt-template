@@ -8,8 +8,15 @@ node -v
 
 Setup the project specifications you want:
 
+### Basic
 ```bash
 yarn setup_basic
+```
+
+### Advanced
+
+```bash
+PROJECT_NAME=<your project name> yarn setup_advanced
 ```
 
 ## Development Server

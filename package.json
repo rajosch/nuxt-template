@@ -7,8 +7,9 @@
     "url": "https://rjschmid.net"
   },
   "scripts": {
+    "setup": "node setup.js",
     "build": "nuxt build",
-    "dev": "node setup.js && nuxt dev",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"

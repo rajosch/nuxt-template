@@ -3,7 +3,7 @@
 Make sure to install the dependencies:
 
 ```bash
-yarn setup
+yarn setup_basic
 ```
 
 ## Development Server

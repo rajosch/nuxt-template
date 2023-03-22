@@ -7,12 +7,13 @@
     "url": "https://rjschmid.net"
   },
   "scripts": {
-    "setup": "node setup.js",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "setup_basic" : "node setup_basic.js",
+    "setup": "node setup.js"
   },
   "devDependencies": {
     "nuxt": "^3.3.1"

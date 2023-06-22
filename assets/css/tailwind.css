@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'PP FRAKTION SANS';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~/assets/fonts/PPFraktionSans-Light.woff2') format('woff2');
+
+
+  
+  }
+  @font-face {
+    font-family: 'SANS BOLD';
+    font-style: normal;
+    font-weight: 700;
+    src: url('~/assets/fonts/PPFraktionSans-Bold.woff2') format('woff2');
+
+
+  
+  }
+  font-face {
+    font-family: 'SANS THIN';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~/assets/fonts/PPFraktionSans-Thin.woff2') format('woff2');
+  }
+body {
+  font-family: 'PP FRAKTION SANS', sans-serif;
+}
+
+h1 {
+  font-family: 'SANS BOLD', sans-serif;
+}
+h2 {
+  font-family: 'SANS BOLD', sans-serif;
+}

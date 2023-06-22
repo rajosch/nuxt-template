@@ -1,10 +1,8 @@
 {
   "private": true,
-  "license": "MIT",
   "author": {
     "name": "Raphael Schmid",
-    "email": "raphaeljschmid@protonmail.com",
-    "url": "https://rjschmid.net"
+    "email": "raphael@bproto.io"
   },
   "scripts": {
     "build": "nuxt build",
@@ -12,10 +10,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "setup_basic": "node setup_basic.js",
-    "setup_advanced": "node setup_advanced.js"
+    "setup": "node setup.js"
   },
   "devDependencies": {
-    "nuxt": "^3.3.1"
+    "@heroicons/vue": "v1"
   }
 }

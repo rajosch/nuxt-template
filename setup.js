@@ -61,7 +61,7 @@ async function createFiles() {
     {
         path: 'layouts/default.vue',
         content: `<template>
-    <div class="bg-gradient-to-r from-primary-start to-primary-end relative">
+    <div class="bg-gradient-to-r from-primary-start to-primary-end relative text-white">
         <Title>.${domainName}</Title>
 
         <CommonNavbar />
@@ -200,7 +200,7 @@ scroll-behavior: smooth;
                         title: 'The NFT',
                         description: 'Buy it once, own it forever.',
                         icon: Image1,
-                        data: 'Once your own your domain, it\'s yours! No subscriptions, no renewals. Your NFT, your content, your data',
+                        data: 'Once your own your domain, it\\'s yours! No subscriptions, no renewals. Your NFT, your content, your data',
                         button: '',
                         buttonUrl:''
                     },
@@ -208,7 +208,7 @@ scroll-behavior: smooth;
                         title: 'ENS Ready',
                         description: 'Your namespace for Web 3.0 and Web 2.0',
                         icon: Image2,
-                        data: 'Built on the Cortex Network, and leveraging the Butterfly Protocol, you can use your . ${domainName} domains just like other Web 3.0-enabled domains',
+                        data: 'Built on the Cortex Network, and leveraging the Butterfly Protocol, you can use your .${domainName} domains just like other Web 3.0-enabled domains',
                         button: 'Learn More',
                         buttonUrl: 'https://crtx.app'
                     },
@@ -216,7 +216,7 @@ scroll-behavior: smooth;
                         title: 'Publish',
                         description: 'Not your keys, not your content.',
                         icon: Image3,
-                        data: 'Use Cortex Press to publish content to your . ${domainName} domain. Your fans can even access your site in Web 2.0 environments! yourname. ${domainName}.fans',
+                        data: 'Use Cortex Press to publish content to your .${domainName} domain. Your fans can even access your site in Web 2.0 environments! yourname. ${domainName}.fans',
                         button: 'Learn More',
                         buttonUrl: 'https://cortex.press'
                     },
@@ -224,7 +224,7 @@ scroll-behavior: smooth;
                         title: 'Subdomains',
                         description: 'Mint an infinite amount.',
                         icon: Image4,
-                        data: 'Want to build a community around your . ${domainName}? Mint subdomains for members, customers, projects, activations, and more',
+                        data: 'Want to build a community around your .${domainName}? Mint subdomains for members, customers, projects, activations, and more',
                         button: '',
                         buttonUrl: ''
                     },

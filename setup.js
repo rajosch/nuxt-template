@@ -25,7 +25,7 @@ function executeCommand(command) {
 async function installDependencies() {
   console.log('Installing dependencies...');
   try {
-    await executeCommand('yarn add --dev nuxt tailwindcss @nuxtjs/tailwindcss');
+    await executeCommand('yarn');
   } catch (error) {
     console.error('Failed to install dependencies:', error);
   }

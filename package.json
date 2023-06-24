@@ -2,7 +2,7 @@
   "private": true,
   "author": {
     "name": "Raphael Schmid",
-    "email": "raphael@bproto.io"
+    "email": "rjschmid-npm@proton.me"
   },
   "scripts": {
     "build": "nuxt build",
@@ -10,14 +10,18 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "setup": "node setup.js"
+    "setup": "node setup.js",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "eslint": "^8.28.0",
+    "@crtxio/wallet": "^0.0.4",
     "@heroicons/vue": "v1",
-    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxtjs/tailwindcss": "^6.6.7",
     "@typescript-eslint/typescript-estree": "^5.60.0",
-    "nuxt": "^3.6.0",
+    "nuxt": "^3.0.0",
     "tailwindcss": "^3.3.2",
-    "typescript": "^5.1.3"
+    "typescript": "^4.9.3"
   }
 }

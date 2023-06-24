@@ -1,15 +1,14 @@
 <template>
-    <div class="relative mx-5 my-10 md:mx-20 md:my-20 h-full">
+  <div class="relative mx-5 my-10 md:mx-20 md:my-20 h-full">
+    <SectionHero />
 
-        <SectionHero />
+    <SectionAbout />
 
-        <SectionAbout />
+    <SectionFeatures />
 
-        <SectionFeatures />
-
-        <!-- Widgets and other divs which appear on top of the sections. -->
+    <!-- Widgets and other divs which appear on top of the sections. -->
         
-        <!-- <router-link
+    <!-- <router-link
             v-show="!isTop"
             to="/#home" 
             id="scrollUpButton" 
@@ -18,8 +17,7 @@
         >
             <ArrowUpIcon class="w-6 h-6 text-white"/>
         </router-link> -->
-
-    </div>
+  </div>
 </template>
 
 <!-- <script>

@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  extends: [
+    '@crtxio/wallet'
+  ],
   modules: [
     '@nuxtjs/tailwindcss',
   ],
@@ -11,4 +14,3 @@ export default defineNuxtConfig({
     viewer: true,
   },
 })
-        

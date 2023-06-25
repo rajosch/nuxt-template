@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   extends: [
-    '@crtxio/wallet'
+    '@crtxio/wallet',
+    '@crtxio/notification',
+    '@crtxio/darkmode',
   ],
   modules: [
     '@nuxtjs/tailwindcss',

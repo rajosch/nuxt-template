@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary border-t py-5  text-white text-xl">
+  <div class="bg-primary dark:bg-primary-dark border-t py-5 text-xl">
     <div class="flex justify-center font-bold mb-2">
       Powered by
     </div>

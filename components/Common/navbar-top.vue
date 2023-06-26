@@ -103,14 +103,6 @@
             >
               {{ item[1] }}
             </router-link>
-            <a
-              :href="item[0]"
-              class="text-xl p-2 py-3 rounded-full"
-              target="_blank"
-              @click="toggleNav = !toggleNav"
-            >
-              {{ item[1] }}
-            </a>
           </div>
         </div>
       

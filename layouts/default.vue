@@ -1,14 +1,14 @@
 <template>
-  <div class="bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end relative text-white">
+  <div class="bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end relative text-white min-h-screen">
     <Title>.{{ tld }}</Title>
 
     <CommonNavbarTop />
 
-    <main class="flex flex-1 flex-col">
+    <main class="flex flex-1 flex-col h-full">
       <slot />
     </main>
-
-    <CommonPageBottom />
+    
+    <CommonPageBottom class="absolute w-full bottom-0" />
   </div>
 </template>
 

@@ -16,6 +16,9 @@
   import store from '~/store';
 
   export default {
+    emits: [
+      'update-available'
+    ],
     data() {
       return {
         ...store,
@@ -31,6 +34,7 @@
         this.available = available;
         this.typing = false;
         this.domain = domain;
+        this.$emit('update-available', this.available, this.domain);
       },
       updateTyping(typing) {
         this.typing = typing;

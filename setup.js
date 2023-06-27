@@ -3,6 +3,9 @@ const { exec } = require('child_process');
 
 // passed variables
 let domainName = process.argv[2];
+let ensBridge = process.argv[3];
+let ensTld = process.argv[4];
+let issuanceId = process.argv[5];
 
 
 // Function to execute shell commands
@@ -63,7 +66,10 @@ async function createFiles() {
         content: `import { reactive, toRefs } from "vue";
 
         const state = reactive({
-            tld: '${domainName}'
+            tld: '${domainName}',
+            ensBridge: ${ensBridge},
+            ensTld: '${ensTld}',
+            issuanceId: ${issuanceId},
         });
         
         export default {

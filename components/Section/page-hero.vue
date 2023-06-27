@@ -14,8 +14,25 @@
             Embrace the future with your ideal {{ tld }} domain today. 
             Make your mark in the crypto world and transform ideas into reality in your unique digital space.
           </div>
-          <div class="mt-16">
-            <WidgetDomainSearch />
+          <div class="mt-16 flex items-center">
+            <WidgetDomainSearch
+              @update-available="updateAvailable"
+            />
+            <div
+              v-if="domainAvailable"
+              class="ml-5"
+            >
+              <div class="p-3 border rounded-md hover:bg-primary cursor-pointer font-semibold">
+                Purchase
+              </div>
+              <!-- <PurchaseDomain
+                :issuance-id="issuanceId"
+                :search-bar="false"
+                :label="label"
+                search-bar-css="text-xl py-3 px-3 pl-10 rounded-full border border-transparent focus:ring-0 focus:outline-none transition-all duration-300"
+                @update-namehash="updateNamehash"
+              /> -->
+            </div>
           </div>
         </div>
 
@@ -37,8 +54,16 @@
   export default {
     data() {
       return {
-        ...store
+        ...store,
+        domainAvailable: false,
+        label: ''
       }
     },
+    methods: {
+      updateAvailable(isAvailable, label) {
+        this.domainAvailable = isAvailable;
+        this.label = label;
+      }
+    }
   }
 </script>

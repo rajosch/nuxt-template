@@ -14,6 +14,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "@crtxio/bproto-contract-call": "^0.0.1",
     "@crtxio/darkmode": "^0.0.3",
     "@crtxio/notification": "^0.0.1",
     "@crtxio/search": "^0.0.1",

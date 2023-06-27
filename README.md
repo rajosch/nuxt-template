@@ -10,7 +10,7 @@ Setup the project specifications you want:
 
 ### Basic
 ```bash
-yarn setup <domain-name>
+yarn setup <domain-name> <has-ens-bridge> <ens-tld> <issuance-id>
 ```
 
 ## Development Server

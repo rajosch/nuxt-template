@@ -16,6 +16,7 @@
   "devDependencies": {
     "@crtxio/darkmode": "^0.0.3",
     "@crtxio/notification": "^0.0.1",
+    "@crtxio/search": "^0.0.1",
     "@crtxio/wallet": "^0.0.7",
     "@heroicons/vue": "v1",
     "@nuxt/eslint-config": "^0.1.1",

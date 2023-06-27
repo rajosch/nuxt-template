@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@crtxio/wallet',
     '@crtxio/notification',
     '@crtxio/darkmode',
+    '@crtxio/search',
   ],
   modules: [
     '@nuxtjs/tailwindcss',

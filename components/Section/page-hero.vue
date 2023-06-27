@@ -14,6 +14,9 @@
             Embrace the future with your ideal {{ tld }} domain today. 
             Make your mark in the crypto world and transform ideas into reality in your unique digital space.
           </div>
+          <div class="mt-16">
+            <WidgetDomainSearch />
+          </div>
         </div>
 
         <!-- IMAGE SECTION -->
@@ -36,6 +39,6 @@
       return {
         ...store
       }
-    }
+    },
   }
 </script>

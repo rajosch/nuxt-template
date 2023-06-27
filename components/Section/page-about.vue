@@ -1,7 +1,7 @@
 <template>
   <div
     id="about"
-    class="min-h-screen relative flex items-center justify-center"
+    class="sm:min-h-screen my-20 sm:my-0 relative flex items-center justify-center"
   >
     <div class="flex flex-col gap-y-5 sm:flex-row w-full">
       <!-- SVG SECTION -->

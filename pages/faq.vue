@@ -150,6 +150,16 @@
           {
             title: 'subdomain',
             description: '',
+            subtopics: [
+              {
+                title: 'Do I have to pay to register subdomains as well?',
+                description: [
+                  "No!",
+                  `You do not have to purchase the subdomains like you have to with the original .${store.tld.value} domain.`,
+                  'But you will have to pay the gas fees to register the subdomain. '
+              ]
+              }
+            ]
           },
           {
             title: 'ens',

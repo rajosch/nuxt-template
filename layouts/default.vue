@@ -5,9 +5,15 @@
     <!-- Widgets -->
     <WidgetEventNotification />
 
-    <CommonNavbarTop />
+    <CommonNavbarTop
+      :settings="settings"
+      @update-settings="updateSettings"
+    />
 
-    <main class="flex flex-1 flex-col h-full">
+    <main 
+      class="flex flex-1 flex-col h-full"
+      @click="settings ? settings = false : null"
+    >
       <slot />
     </main>
     
@@ -21,7 +27,13 @@
   export default {
     data() {
       return {
-        ...store
+        ...store,
+        settings: false
+      }
+    },
+    methods: {
+      updateSettings(value) {
+        this.settings = value;
       }
     }
   }

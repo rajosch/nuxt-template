@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: 'class',
+    darkMode: 'media',
     theme: {
         extend: {
             backgroundColor: {
@@ -23,8 +23,8 @@ module.exports = {
     },
     variants: {
         extend: {
-        backgroundColor: ['dark'],
-        textColor: ['dark'],
+            backgroundColor: ['dark'],
+            textColor: ['dark'],
         },
     },
     plugins: [],

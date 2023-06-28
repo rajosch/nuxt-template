@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@crtxio/bproto-contract-call',
     '@crtxio/wallet',
     '@crtxio/notification',
-    '@crtxio/darkmode',
     '@crtxio/search',
   ],
   modules: [

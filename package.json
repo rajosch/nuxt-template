@@ -14,10 +14,10 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@crtxio/bproto-contract-call": "^0.0.1",
+    "@crtxio/bproto-contract-call": "^0.0.2",
     "@crtxio/darkmode": "^0.0.3",
     "@crtxio/notification": "^0.0.1",
-    "@crtxio/search": "^0.0.1",
+    "@crtxio/search": "^0.0.2",
     "@crtxio/wallet": "^0.0.7",
     "@heroicons/vue": "v1",
     "@nuxt/eslint-config": "^0.1.1",

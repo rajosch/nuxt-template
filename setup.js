@@ -6,6 +6,8 @@ let domainName = process.argv[2];
 let ensBridge = process.argv[3];
 let ensTld = process.argv[4];
 let issuanceId = process.argv[5];
+let press = process.argv[6];
+let zoneContract = process.argv[7];
 
 
 // Function to execute shell commands
@@ -65,18 +67,38 @@ async function createFiles() {
         path: 'store.js',
         content: `import { reactive, toRefs } from "vue";
 
-        const state = reactive({
-            tld: '${domainName}',
-            ensBridge: ${ensBridge},
-            ensTld: '${ensTld}',
-            issuanceId: ${issuanceId},
-        });
-        
-        export default {
-            ...toRefs(state),
-        };
-        
-        `,
+const state = reactive({
+  tld: '${domainName}',
+  ensBridge: ${ensBridge},
+  ensTld: '${ensTld}',
+  issuanceId: ${issuanceId},
+  press: ${press},
+  zoneContract: ${zoneContract},
+  //event-notifictaion
+  errorHappened: false,
+  successHappened: false,
+  message: '',
+});
+
+function setErrorHappened(value) {
+  state.errorHappened = value;
+}
+
+function setSuccessHappened(value) {
+    state.successHappened = value;
+}
+
+function setMessage(message) {
+  state.message = message;
+}
+
+export default {
+  ...toRefs(state),
+  setErrorHappened,
+  setSuccessHappened,
+  setMessage,
+};
+`,
     },
   ];
 

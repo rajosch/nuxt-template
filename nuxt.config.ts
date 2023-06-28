@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   extends: [
+    '@crtxio/bproto-contract-call',
     '@crtxio/wallet',
     '@crtxio/notification',
     '@crtxio/darkmode',

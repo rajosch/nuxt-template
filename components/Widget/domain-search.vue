@@ -1,7 +1,21 @@
 <template>
   <div>
     <PressSearch 
+      v-if="press"
       :tld="tld"
+      main-tw-css-classes="text-black"
+      input-tw-css-classes="w-full"
+      :restricted-terms="restrictedTerms" 
+      :restricted-beginnings="restrictedBeginnings" 
+      @update-typing="updateTyping"
+      @update-available="updateAvailable"
+    />
+
+
+    <ChainSearch 
+      v-else
+      :tld="tld"
+      :contract="zoneContract"
       main-tw-css-classes="text-black"
       input-tw-css-classes="w-full"
       :restricted-terms="restrictedTerms" 
@@ -35,9 +49,15 @@
         this.typing = false;
         this.domain = domain;
         this.$emit('update-available', this.available, this.domain);
+        if(available) {
+          showSuccessMessage(`${this.domain} is available`)
+        }else {
+          showErrorMessage(`${this.domain} is not available`)
+        }
       },
       updateTyping(typing) {
         this.typing = typing;
+        this.$emit('update-available', false, this.domain);
       }
     },
   }

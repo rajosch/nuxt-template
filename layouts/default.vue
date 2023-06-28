@@ -2,6 +2,9 @@
   <div class="bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end relative text-white min-h-screen">
     <Title>.{{ tld }}</Title>
 
+    <!-- Widgets -->
+    <WidgetEventNotification />
+
     <CommonNavbarTop />
 
     <main class="flex flex-1 flex-col h-full">

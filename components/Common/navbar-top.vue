@@ -1,6 +1,9 @@
 <template>
   <div class="relative shadow-md">
     <div class="flex justify-between items-center text-2xl sm:p-2 md:p-5">
+      <!-- Widgets -->
+      <WidgetEventNotification style="z-index: 1000000;" />
+      
       <!-- --- Desktop --- -->
       <div
         id="desktop"

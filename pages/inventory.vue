@@ -170,7 +170,7 @@
     async beforeMount() {
       if(getAccount()) {
         this.loading = true;
-        this.tree = await arrangeDomains(store.tld.value, await queryDomains('0x8cf7f8a2eb9cbf7a01dfb89f45951de4fb421d27'));
+        this.tree = await arrangeDomains(store.tld.value, await queryDomains(getAccount()));
         if(this.tree) {
           this.loadRoot();
         }

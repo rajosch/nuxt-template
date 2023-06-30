@@ -1,12 +1,12 @@
 <template>
-  <div class="flex h-full">
+  <div class="grid lg:flex h-full w-full">
     <div
       id="sidebar"
-      class="w-1/4 p-5"
+      class="w-full lg:w-1/4 px-3 py-5 lg:px-5"
     >
       <div
         id="searchbar"
-        class="mb-10"
+        class="lg:flex grid place-items-center mb-10"
       >
         <input  
           v-model="searchTerm" 
@@ -17,7 +17,7 @@
         >
       </div>
 
-      <div class="w-full grid place-items-center">
+      <div class="hidden w-full lg:grid place-items-center">
         <div
           v-for="topic in topics"
           id="topics"
@@ -42,12 +42,12 @@
 
     <div
       id="main"
-      class="w-3/4 p-5"
+      class="w-full lg:w-3/4 p-3 lg:p-5"
     >
       <div
         v-if="searchTerm.length !== 0"
         id="searchbar-results"
-        class="h-96 overflow-x-auto"
+        class="h-96 overflow-x-auto grid place-items-center"
       >
         <div
           v-for="subtopic in filteredSubtopic"
@@ -127,14 +127,14 @@
               {
                 title: `How is the price for a .${store.tld.value} calculated?`,
                 description: [`The price to purchase a .${store.tld.value} domain is dependent on the amount of letters in the domain name you want to purchase.`,
-                              `>= 8 letters: $100`,
-                              `7 letters: $200`,
-                              `6 letters: $400`,
-                              `5 letters: $800`,
-                              `4 letters: $1,600`,
-                              `3 letters: $3,200`,
-                              `2 letters: $6,400`,
-                              `1 letters: $12,800`
+                              `>= 8 letters: $${store.basePrice.value}`,
+                              `7 letters: $${store.basePrice.value * 2}`,
+                              `6 letters: $${store.basePrice.value * 4}`,
+                              `5 letters: $${store.basePrice.value * 8}`,
+                              `4 letters: $${store.basePrice.value * 16}`,
+                              `3 letters: $${store.basePrice.value * 32}`,
+                              `2 letters: $${store.basePrice.value * 64}`,
+                              `1 letters: $${store.basePrice.value * 128}`
                             ]
               },
               {

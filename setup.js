@@ -8,7 +8,7 @@ let ensTld = process.argv[4];
 let issuanceId = process.argv[5];
 let press = process.argv[6];
 let zoneContract = process.argv[7];
-
+let basePrice = process.argv[8];
 
 // Function to execute shell commands
 function executeCommand(command) {
@@ -74,6 +74,8 @@ const state = reactive({
   issuanceId: ${issuanceId},
   press: ${press},
   zoneContract: ${zoneContract},
+  // pricing in dollars
+  basePrice: ${basePrice},
   //event-notifictaion
   errorHappened: false,
   successHappened: false,

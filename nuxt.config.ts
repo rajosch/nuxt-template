@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   ssr: false,
   extends: [
     '@crtxio/bproto-contract-call',
+    '@crtxio/bproto-domain-lookup',
     '@crtxio/wallet',
     '@crtxio/notification',
     '@crtxio/search',

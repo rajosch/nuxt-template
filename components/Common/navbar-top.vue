@@ -46,54 +46,57 @@
             @click="$emit('update-settings', !settings)"
           />
           <Wallet
-            connect-class-properties="text-lg font-semibold hover:bg-primary"
+            connect-class-properties="text-lg font-semibold hover:bg-primary dark:hover:bg-primary-dark"
             expanded-class-properties="text-white bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end relative"
             :services="['metamask']"
           /> 
         </div>
+      </div>
 
-        <!-- --- Mobile --- -->
-        <div
-          id="mobile"
-          class="grid sm:hidden w-full"
-        >
-          <div class="w-full flex justify-between py-4 px-2 items-center">
-            <div class="flex items-center">
-              <img
-                class="h-12 pr-5"
-                src="~/assets/img/logo.svg"
-              >
-              <div class="text-2xl font-bold">
-                {{ tld }}
-              </div>
-            </div>
 
-            <div
-              v-if="!toggleNav"
-              class="flex justify-end"
+      <!-- --- Mobile --- -->
+      <div
+        id="mobile"
+        class="grid sm:hidden w-full"
+      >
+        <div class="w-full flex justify-between py-4 px-2 items-center">
+          <div class="flex items-center">
+            <img
+              class="h-12 pr-5"
+              src="~/assets/img/logo.svg"
             >
-              <button
-                class="mr-3"
-                @click="toggleNav = !toggleNav"
-              >
-                <svg
-                  class="fill-current h-6 w-6"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                </svg>
-              </button>
-              <DarkModeToggle />
+            <div class="text-2xl font-bold">
+              {{ tld }}
             </div>
           </div>
 
-          <!-- Navigation -->
           <div
-            v-if="toggleNav"
-            class="w-full text-xl flex justify-center my-5"
+            v-if="!toggleNav"
+            class="flex justify-end"
           >
+            <button
+              class="mr-3"
+              @click="toggleNav = !toggleNav"
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+            <DarkModeToggle />
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div
+          v-if="toggleNav"
+          class="w-full text-xl mt-5"
+        >
+          <div class="flex justify-center">
             <div
               v-for="item in navigation"
               :key="item"
@@ -108,15 +111,32 @@
               </router-link>
             </div>
           </div>
+          <div
+            v-if="isConnected"
+            class="flex justify-center my-5"
+          >
+            <div
+              v-for="item in settingsNavigation"
+              :key="item"
+            >
+              <router-link
+                :to="item[0]"
+                class="text-xl p-2 py-3 px-3"
+                :class="[{ 'opacity-100': $route.path === item[0] }, { 'opacity-50': $route.path !== item[0]}]"
+                @click="toggleNav = !toggleNav"
+              >
+                {{ item[1] }}
+              </router-link>
+            </div>
+          </div>
       
           <div
-            v-if="toggleNav"
             class="grid place-items-center w-full"
           >
             <div class="flex items-center my-5">
               <Wallet
                 connect-class-properties="text-lg font-semibold"
-                expanded-class-properties="bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end relative"
+                expanded-class-properties="text-white bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end relative"
                 :services="['metamask']"
               />
             </div>
@@ -136,16 +156,20 @@
     <!-- Dropdown Menu - Settings -->
     <div
       v-if="settings"
-      class="absolute border text-xl right-3 w-2/12 h-fit rounded-md shadow-lg ring-1 ring-black ring-opacity-5 bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end"
+      class="hidden sm:grid absolute border text-xl right-3 w-2/12 h-fit rounded-md shadow-lg ring-1 ring-black ring-opacity-5 bg-gradient-to-r dark:from-primary-start-dark dark:to-primary-end-dark from-primary-start to-primary-end"
       style="z-index: 1000;"
     > 
-      <div class="p-3 grid gap-y-3">
+      <div
+        v-if="isConnected"
+        class="p-3 grid gap-y-3"
+      >
         <router-link
-          v-if="isConnected"
-          to="/inventory"
+          v-for="item in settingsNavigation"
+          :key="item"
+          :to="item[0]"
           @click="$emit('update-settings', !settings)"
         >
-          Inventory
+          {{ item[1] }}
         </router-link>
       </div>
     </div>
@@ -173,7 +197,6 @@ export default {
       return {
         ...store,
         settingsNavigation: [
-          ["/profile", "Profile"],
           ["/inventory", "Inventory"],
         ],
         navigation: [

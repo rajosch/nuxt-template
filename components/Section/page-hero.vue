@@ -26,7 +26,7 @@
                 :issuance-id="issuanceId"
                 :search-bar="false"
                 :label="label"
-                button-css="p-2 rounded-md hover:bg-primary cursor-pointer"
+                button-css="p-2 rounded-md hover:bg-primary dark:hover:bg-primary-dark cursor-pointer"
                 @update-namehash="updateNamehash"
               />
             </div>

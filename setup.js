@@ -1,6 +1,10 @@
 const fs = require('fs');
 const { exec } = require('child_process');
 
+// imports
+const colors = require('./assets/data/colors.json');
+
+
 // passed variables
 let domainName = process.argv[2];
 let ensBridge = process.argv[3];
@@ -9,6 +13,12 @@ let issuanceId = process.argv[5];
 let press = process.argv[6];
 let zoneContract = process.argv[7];
 let basePrice = process.argv[8];
+let colorScheme = process.argv[9];
+
+
+function getObject() {
+  return colors[colorScheme] ? colors[colorScheme] : colors.BProto;
+}
 
 // Function to execute shell commands
 function executeCommand(command) {
@@ -102,6 +112,25 @@ export default {
 };
 `,
     },
+    {
+      path: 'tailwind.config.js',
+      content: `/** @type {import('tailwindcss').Config} */
+module.exports = {
+    darkMode: 'media',
+    theme: {
+        extend: 
+          ${JSON.stringify(getObject(), null, 12)}
+        ,
+    },
+    variants: {
+        extend: {
+            backgroundColor: ['dark'],
+            textColor: ['dark'],
+        },
+    },
+    plugins: [],
+}`
+    }
   ];
 
   files.forEach((file) => {

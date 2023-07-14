@@ -134,6 +134,15 @@ module.exports = {
   ];
 
   files.forEach((file) => {
+    if (fs.existsSync(file.path)) {
+      try {
+        fs.unlinkSync(file.path);
+        console.log(`Successfully deleted ${file.path}`);
+      } catch (error) {
+        console.error(`Failed to delete file: ${error}`);
+      }
+    }
+    
     fs.writeFile(file.path, file.content, (error) => {
       if (error) {
         console.error('Failed to write file:', error);

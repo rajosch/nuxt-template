@@ -75,7 +75,8 @@ async function createFiles() {
   const files = [
     {
         path: 'store.js',
-        content: `import { reactive, toRefs } from "vue";
+        content: `//Do NOT manually alter this file!
+import { reactive, toRefs } from "vue";
 
 const state = reactive({
   tld: '${domainName}',
@@ -114,7 +115,8 @@ export default {
     },
     {
       path: 'tailwind.config.js',
-      content: `/** @type {import('tailwindcss').Config} */
+      content: `//Do NOT manually alter this file!
+/** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: 'media',
     theme: {

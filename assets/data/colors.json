@@ -89,6 +89,24 @@
           "primary-end-dark": "#336699"
       }
     },
+    "Pepe": {
+        "backgroundColor": {
+          "primary": "#6dbc5a",
+          "secondary": "#158b25",
+          "primary-dark": "#407c35",
+          "secondary-dark": "#0d5a18"
+        },
+        "textColor": {
+          "primary": "#6dbc5a",
+          "secondary": "#158b25"
+        },
+        "gradientColorStops": {
+          "primary-start": "#67af55",
+          "primary-end": "#0a861e",
+          "primary-start-dark": "#3b7830",
+          "primary-end-dark": "#085a14"
+        }
+    },
     "Monochrome": {
       "backgroundColor": {
           "primary": "#cccccc",

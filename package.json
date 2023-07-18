@@ -1,5 +1,6 @@
 {
   "private": true,
+  "version": "0.0.1",
   "author": {
     "name": "Raphael Schmid",
     "email": "rjschmid-npm@proton.me"
@@ -16,7 +17,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@crtxio/bproto-contract-call": "^0.0.3",
+    "@crtxio/bproto-contract-call": "^0.0.4",
     "@crtxio/bproto-domain-lookup": "^0.0.1",
     "@crtxio/notification": "^0.0.2",
     "@crtxio/search": "^0.0.2",

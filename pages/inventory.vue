@@ -4,21 +4,13 @@
       v-if="selectedDomain"
       class="h-full"
     >
-      <div class="flex items-center mb-8">
-        <ArrowLeftIcon
-          class="w-6 h-6"
-          :class="[{ 'opacity-50': selectedDomainIndex === 0 }, { 'cursor-pointer' : selectedDomainIndex !== 0}]"
-          @click="selectedDomainIndex ? loadFormerDomain() : null"
-        />
-        <div class="text-3xl font-bold mx-2 mb-1 w-72 text-center">
-          {{ selectedDomain.fqn }}
-        </div>
-        <ArrowRightIcon
-          class="w-6 h-6"
-          :class="[{ 'opacity-50': selectedDomainIndex >= domains.length - 1 }, { 'cursor-pointer' : (selectedDomainIndex < domains.length - 1)}]"
-          @click="(selectedDomainIndex < domains.length - 1) ? LoadNextDomain() : null"
-        />
-      </div>
+      <WidgetDropdownMenu 
+        class="w-1/3 mb-8"
+        :selected-item="selectedDomain"
+        :items="domains"
+        :select-message="'Select domain...'"
+        @update-item="selectDomain"
+      />
       <div class="md:flex justify-between">
         <div class="mb-5 grid place-items-center">
           <img 
@@ -170,7 +162,7 @@
     async beforeMount() {
       if(getAccount()) {
         this.loading = true;
-        this.tree = await arrangeDomains(store.tld.value, await queryDomains(getAccount()));
+        this.tree = await arrangeDomains(store.tld.value, await queryDomains("0x8cf7f8a2eb9cbf7a01dfb89f45951de4fb421d27"));//await queryDomains(getAccount()));
         if(this.tree) {
           this.loadRoot();
         }
@@ -178,13 +170,7 @@
       }
     },
     methods: {
-      loadFormerDomain() {
-        this.traverseDomains(this.domains[this.selectedDomainIndex-1]);
-      },
-      LoadNextDomain() {
-        this.traverseDomains(this.domains[this.selectedDomainIndex+1]);
-      },
-      traverseDomains(domain) {
+      selectDomain(domain) {
         this.selectedDomain = domain;
       },
       loadChild(child) {

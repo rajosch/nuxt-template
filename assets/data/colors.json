@@ -394,5 +394,401 @@
           "primary-start-dark": "#66331a",
           "primary-end-dark": "#661a0f"
       }
+    },
+    "Slate": {
+        "backgroundColor": {
+            "primary": "#64748b",
+            "secondary": "#cbd5e1",
+            "primary-dark": "#334155",
+            "secondary-dark": "#0f172a"
+        },
+        "textColor": {
+            "primary": "#64748b",
+            "secondary": "#cbd5e1"
+        },
+        "gradientColorStops": {
+            "primary-start": "#64748b",
+            "primary-end": "#cbd5e1",
+            "primary-start-dark": "#334155",
+            "primary-end-dark": "#0f172a"
+        }
+    },
+    "Gray": {
+        "backgroundColor": {
+            "primary": "#6b7280",
+            "secondary": "#d1d5db",
+            "primary-dark": "#374151",
+            "secondary-dark": "#111827"
+        },
+        "textColor": {
+            "primary": "#6b7280",
+            "secondary": "#d1d5db"
+        },
+        "gradientColorStops": {
+            "primary-start": "#6b7280",
+            "primary-end": "#d1d5db",
+            "primary-start-dark": "#374151",
+            "primary-end-dark": "#111827"
+        }
+    },
+    "Zinc": {
+        "backgroundColor": {
+            "primary": "#71717a",
+            "secondary": "#d4d4d8",
+            "primary-dark": "#3f3f46",
+            "secondary-dark": "#18181b"
+        },
+        "textColor": {
+            "primary": "#71717a",
+            "secondary": "#d4d4d8"
+        },
+        "gradientColorStops": {
+            "primary-start": "#71717a",
+            "primary-end": "#d4d4d8",
+            "primary-start-dark": "#3f3f46",
+            "primary-end-dark": "#18181b"
+        }
+    },
+    "Neutral": {
+        "backgroundColor": {
+            "primary": "#737373",
+            "secondary": "#d4d4d4",
+            "primary-dark": "#404040",
+            "secondary-dark": "#171717"
+        },
+        "textColor": {
+            "primary": "#737373",
+            "secondary": "#d4d4d4"
+        },
+        "gradientColorStops": {
+            "primary-start": "#737373",
+            "primary-end": "#d4d4d4",
+            "primary-start-dark": "#404040",
+            "primary-end-dark": "#171717"
+        }
+    },
+    "Stone": {
+        "backgroundColor": {
+            "primary": "#78716c",
+            "secondary": "#d6d3d1",
+            "primary-dark": "#44403c",
+            "secondary-dark": "#1c1917"
+        },
+        "textColor": {
+            "primary": "#78716c",
+            "secondary": "#d6d3d1"
+        },
+        "gradientColorStops": {
+            "primary-start": "#78716c",
+            "primary-end": "#d6d3d1",
+            "primary-start-dark": "#44403c",
+            "primary-end-dark": "#1c1917"
+        }
+    },
+    "Red": {
+        "backgroundColor": {
+            "primary": "#ef4444",
+            "secondary": "#fca5a5",
+            "primary-dark": "#b91c1c",
+            "secondary-dark": "#7f1d1d"
+        },
+        "textColor": {
+            "primary": "#ef4444",
+            "secondary": "#fca5a5"
+        },
+        "gradientColorStops": {
+            "primary-start": "#ef4444",
+            "primary-end": "#fca5a5",
+            "primary-start-dark": "#b91c1c",
+            "primary-end-dark": "#7f1d1d"
+        }
+    },
+    "Orange": {
+        "backgroundColor": {
+            "primary": "#f97316",
+            "secondary": "#fdba74",
+            "primary-dark": "#c2410c",
+            "secondary-dark": "#7c2d12"
+        },
+        "textColor": {
+            "primary": "#f97316",
+            "secondary": "#fdba74"
+        },
+        "gradientColorStops": {
+            "primary-start": "#f97316",
+            "primary-end": "#fdba74",
+            "primary-start-dark": "#c2410c",
+            "primary-end-dark": "#7c2d12"
+        }
+    },
+    "Amber": {
+        "backgroundColor": {
+            "primary": "#f59e0b",
+            "secondary": "#fde68a",
+            "primary-dark": "#b45309",
+            "secondary-dark": "#78350f"
+        },
+        "textColor": {
+            "primary": "#f59e0b",
+            "secondary": "#fde68a"
+        },
+        "gradientColorStops": {
+            "primary-start": "#f59e0b",
+            "primary-end": "#fde68a",
+            "primary-start-dark": "#b45309",
+            "primary-end-dark": "#78350f"
+        }
+    },
+    "Yellow": {
+        "backgroundColor": {
+            "primary": "#eab308",
+            "secondary": "#fef08a",
+            "primary-dark": "#a16207",
+            "secondary-dark": "#713f12"
+        },
+        "textColor": {
+            "primary": "#eab308",
+            "secondary": "#fef08a"
+        },
+        "gradientColorStops": {
+            "primary-start": "#eab308",
+            "primary-end": "#fef08a",
+            "primary-start-dark": "#a16207",
+            "primary-end-dark": "#713f12"
+        }
+    },
+    "Lime": {
+        "backgroundColor": {
+            "primary": "#84cc16",
+            "secondary": "#bbf7d0",
+            "primary-dark": "#4d7c0f",
+            "secondary-dark": "#365314"
+        },
+        "textColor": {
+            "primary": "#84cc16",
+            "secondary": "#bbf7d0"
+        },
+        "gradientColorStops": {
+            "primary-start": "#84cc16",
+            "primary-end": "#bbf7d0",
+            "primary-start-dark": "#4d7c0f",
+            "primary-end-dark": "#365314"
+        }
+    },
+    "Green": {
+        "backgroundColor": {
+            "primary": "#22c55e",
+            "secondary": "#86efac",
+            "primary-dark": "#15803d",
+            "secondary-dark": "#14532d"
+        },
+        "textColor": {
+            "primary": "#22c55e",
+            "secondary": "#86efac"
+        },
+        "gradientColorStops": {
+            "primary-start": "#22c55e",
+            "primary-end": "#86efac",
+            "primary-start-dark": "#15803d",
+            "primary-end-dark": "#14532d"
+        }
+    },
+    "Emerald": {
+        "backgroundColor": {
+            "primary": "#10b981",
+            "secondary": "#a7f3d0",
+            "primary-dark": "#047857",
+            "secondary-dark": "#064e3b"
+        },
+        "textColor": {
+            "primary": "#10b981",
+            "secondary": "#a7f3d0"
+        },
+        "gradientColorStops": {
+            "primary-start": "#10b981",
+            "primary-end": "#a7f3d0",
+            "primary-start-dark": "#047857",
+            "primary-end-dark": "#064e3b"
+        }
+    },
+    "Teal": {
+        "backgroundColor": {
+            "primary": "#14b8a6",
+            "secondary": "#99f6e4",
+            "primary-dark": "#0f766e",
+            "secondary-dark": "#134e4a"
+        },
+        "textColor": {
+            "primary": "#14b8a6",
+            "secondary": "#99f6e4"
+        },
+        "gradientColorStops": {
+            "primary-start": "#14b8a6",
+            "primary-end": "#99f6e4",
+            "primary-start-dark": "#0f766e",
+            "primary-end-dark": "#134e4a"
+        }
+    },
+    "Cyan": {
+        "backgroundColor": {
+            "primary": "#06b6d4",
+            "secondary": "#a5f3fc",
+            "primary-dark": "#0e7490",
+            "secondary-dark": "#083344"
+        },
+        "textColor": {
+            "primary": "#06b6d4",
+            "secondary": "#a5f3fc"
+        },
+        "gradientColorStops": {
+            "primary-start": "#06b6d4",
+            "primary-end": "#a5f3fc",
+            "primary-start-dark": "#0e7490",
+            "primary-end-dark": "#083344"
+        }
+    },
+    "Sky": {
+        "backgroundColor": {
+            "primary": "#0ea5e9",
+            "secondary": "#7dd3fc",
+            "primary-dark": "#0369a1",
+            "secondary-dark": "#0c4a6e"
+        },
+        "textColor": {
+            "primary": "#0ea5e9",
+            "secondary": "#7dd3fc"
+        },
+        "gradientColorStops": {
+            "primary-start": "#0ea5e9",
+            "primary-end": "#7dd3fc",
+            "primary-start-dark": "#0369a1",
+            "primary-end-dark": "#0c4a6e"
+        }
+    },
+    "Blue": {
+        "backgroundColor": {
+            "primary": "#3b82f6",
+            "secondary": "#93c5fd",
+            "primary-dark": "#1d4ed8",
+            "secondary-dark": "#1e3a8a"
+        },
+        "textColor": {
+            "primary": "#3b82f6",
+            "secondary": "#93c5fd"
+        },
+        "gradientColorStops": {
+            "primary-start": "#3b82f6",
+            "primary-end": "#93c5fd",
+            "primary-start-dark": "#1d4ed8",
+            "primary-end-dark": "#1e3a8a"
+        }
+    },
+    "Indigo": {
+        "backgroundColor": {
+            "primary": "#6366f1",
+            "secondary": "#c7d2fe",
+            "primary-dark": "#4338ca",
+            "secondary-dark": "#312e81"
+        },
+        "textColor": {
+            "primary": "#6366f1",
+            "secondary": "#c7d2fe"
+        },
+        "gradientColorStops": {
+            "primary-start": "#6366f1",
+            "primary-end": "#c7d2fe",
+            "primary-start-dark": "#4338ca",
+            "primary-end-dark": "#312e81"
+        }
+    },
+    "Violet": {
+        "backgroundColor": {
+            "primary": "#8b5cf6",
+            "secondary": "#d8b4fe",
+            "primary-dark": "#6d28d9",
+            "secondary-dark": "#4c1d95"
+        },
+        "textColor": {
+            "primary": "#8b5cf6",
+            "secondary": "#d8b4fe"
+        },
+        "gradientColorStops": {
+            "primary-start": "#8b5cf6",
+            "primary-end": "#d8b4fe",
+            "primary-start-dark": "#6d28d9",
+            "primary-end-dark": "#4c1d95"
+        }
+    },
+    "Purple": {
+        "backgroundColor": {
+            "primary": "#a855f7",
+            "secondary": "#d8b4fe",
+            "primary-dark": "#6b21a8",
+            "secondary-dark": "#4c1d95"
+        },
+        "textColor": {
+            "primary": "#a855f7",
+            "secondary": "#d8b4fe"
+        },
+        "gradientColorStops": {
+            "primary-start": "#a855f7",
+            "primary-end": "#d8b4fe",
+            "primary-start-dark": "#6b21a8",
+            "primary-end-dark": "#4c1d95"
+        }
+    },
+    "Fuchsia": {
+        "backgroundColor": {
+            "primary": "#d946ef",
+            "secondary": "#f0abfc",
+            "primary-dark": "#a21caf",
+            "secondary-dark": "#701a75"
+        },
+        "textColor": {
+            "primary": "#d946ef",
+            "secondary": "#f0abfc"
+        },
+        "gradientColorStops": {
+            "primary-start": "#d946ef",
+            "primary-end": "#f0abfc",
+            "primary-start-dark": "#a21caf",
+            "primary-end-dark": "#701a75"
+        }
+    },
+    "Pink": {
+        "backgroundColor": {
+            "primary": "#ec4899",
+            "secondary": "#f9a8d4",
+            "primary-dark": "#be185d",
+            "secondary-dark": "#831843"
+        },
+        "textColor": {
+            "primary": "#ec4899",
+            "secondary": "#f9a8d4"
+        },
+        "gradientColorStops": {
+            "primary-start": "#ec4899",
+            "primary-end": "#f9a8d4",
+            "primary-start-dark": "#be185d",
+            "primary-end-dark": "#831843"
+        }
+    },
+    "Rose": {
+        "backgroundColor": {
+            "primary": "#f43f5e",
+            "secondary": "#fda4af",
+            "primary-dark": "#9f1239",
+            "secondary-dark": "#881337"
+        },
+        "textColor": {
+            "primary": "#f43f5e",
+            "secondary": "#fda4af"
+        },
+        "gradientColorStops": {
+            "primary-start": "#f43f5e",
+            "primary-end": "#fda4af",
+            "primary-start-dark": "#9f1239",
+            "primary-end-dark": "#881337"
+        }
     }
 }

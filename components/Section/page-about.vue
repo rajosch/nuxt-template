@@ -8,7 +8,7 @@
       <div class="flex justify-center w-full sm:w-1/2">
         <img
           class="w-1/2 sm:w-3/4 md:w-1/2"
-          src="~assets/img/logo.svg"
+          src="~assets/img/logos/hero.svg"
         >
       </div>
 
@@ -18,13 +18,13 @@
           About
         </h1>
         <p class="mt-5 text-xl sm:text-3xl pb-10">
-          More than just an ENS Domain
+          Subtitle
         </p>
         <ul class="list-disc text-xl list-inside">
-          <li>Create full websites that can even resolve to Web 2.0 environments</li>
-          <li>Own all the content you publish</li>
-          <li>Mint infinite subdomains that are themselves NFTs</li>
-          <li>Pay once, own forever-No subscriptions</li>
+          <li>Ac turpis egestas maecenas pharetra convallis posuere</li>
+          <li>Ac turpis egestas maecenas pharetra convallis posuere</li>
+          <li>Ac turpis egestas maecenas pharetra convallis posuere</li>
+          <li>Ac turpis egestas maecenas pharetra convallis posuere</li>
         </ul>
       </div>
     </div>

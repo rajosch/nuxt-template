@@ -11,7 +11,7 @@
         >
           <img 
             class="w-28"
-            src="~/assets/img/bproto-logo-white.svg" 
+            src="~/assets/img/logos/bproto-white.svg" 
           >
         </NuxtLink>
       </div>
@@ -23,7 +23,7 @@
         >
           <img 
             class="w-28"
-            src="~/assets/img/crtx-logo-white.svg" 
+            src="~/assets/img/logos/crtx-white.svg" 
           >
         </NuxtLink>
       </div>

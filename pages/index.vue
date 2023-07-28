@@ -3,7 +3,5 @@
     <SectionPageHero />
 
     <SectionPageAbout />
-
-    <SectionPageFeatures class="mb-20 lg:mb-0" />
   </div>
 </template>

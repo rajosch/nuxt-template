@@ -1,16 +1,14 @@
-## Setup
+# Bproto Nuxt 3 Website Template
 
-Make sure you have nodejs installed (>= v.16):
+Standard for setting up a Nuxt 3 web page.
 
+### Setup
 ```bash
-node -v
-```
+git clone https://github.com/rajosch/nuxt-template.git /{path-to-your-dir}/{your-dir-name}
 
-Setup the project specifications you want:
+git remote set-url origin https://github.com/{your-username}/{your-repository}.git
 
-### Basic
-```bash
-yarn setup <domain-name> <has-ens-bridge> <ens-tld> <issuance-id> <press> <zone-contract> <base-price> <color-scheme>
+git push --set-upstream origin main
 ```
 
 If you want to use the standard BProto color scheme just put "".

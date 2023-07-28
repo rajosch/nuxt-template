@@ -8,28 +8,13 @@
       <div class="flex flex-col gap-y-10 sm:flex-row">
         <div class="text-left text-shadow w-full sm:w-3/5">
           <h1 class="text-4xl md:text-5xl uppercase">
-            Secure Your {{ tld }} Domain Today
+            {{ title }}
           </h1>
           <div class="mt-5 text-lg md:text-xl">
-            Embrace the future with your ideal {{ tld }} domain today. 
-            Make your mark in the crypto world and transform ideas into reality in your unique digital space.
-          </div>
-          <div class="mt-16 flex items-center">
-            <WidgetDomainSearch
-              @update-available="updateAvailable"
-            />
-            <div
-              v-if="domainAvailable"
-              class="ml-5"
-            >
-              <PurchaseDomain
-                :issuance-id="issuanceId"
-                :search-bar="false"
-                :label="label"
-                button-css="p-2 rounded-md hover:bg-primary dark:hover:bg-primary-dark cursor-pointer mb-4 sm:mb-0"
-                @update-namehash="updateNamehash"
-              />
-            </div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Dolor purus non enim praesent elementum facilisis leo. 
+            Ac turpis egestas maecenas pharetra convallis posuere. In hac habitasse platea dictumst. 
+            Magna eget est lorem ipsum dolor. Orci porta non pulvinar neque laoreet.
           </div>
         </div>
 
@@ -37,7 +22,7 @@
         <div class="hidden sm:flex justify-center w-2/5">
           <img
             class="w-full sm:w-3/4 md:w-1/2"
-            src="~assets/img/logo.svg"
+            src="~assets/img/logos/hero.svg"
           >
         </div>
       </div>
@@ -52,22 +37,7 @@
     data() {
       return {
         ...store,
-        domainAvailable: false,
-        label: ''
       }
     },
-    methods: {
-      updateAvailable(isAvailable, label) {
-        this.domainAvailable = isAvailable;
-        this.label = label;
-      },
-      async updateNamehash(newHash) {
-        if(newHash === null) {
-          showErrorMessage(`${this.label} could not be purchased`)
-        }else {
-          showSuccessMessage(`${this.label} purchased`)
-        }
-      },
-    }
   }
 </script>
